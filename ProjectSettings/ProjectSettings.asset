@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: PeakyApostolakas
   productName: forpush
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -914,7 +914,7 @@ PlayerSettings:
   qnxGraphicConfPath: 
   apiCompatibilityLevel: 6
   captureStartupLogs: {}
-  activeInputHandler: 1
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
   cloudProjectId: 80d11c25-3612-4e7c-b1c9-f6a9aea8de5f
   framebufferDepthMemorylessMode: 0
