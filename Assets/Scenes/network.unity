@@ -804,14 +804,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Create Virtual Players with "Multiplayer Play Mode", then press "Play".
-
-    You
-    may start a host or client via the buttons on the right, or via the inspector
-    of the NetworkManager, or via code.
-
-    When you see the cube, you can move
-    it with the keys W, A, S, D'
+  m_Text: brat nigga.
 --- !u!114 &1378368675616639730
 MonoBehaviour:
   m_ObjectHideFlags: 0
