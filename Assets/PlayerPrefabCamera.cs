@@ -7,21 +7,17 @@ public class PlayerPrefabCamera : NetworkBehaviour
     {
         if (!IsLocalPlayer) return;
 
-        Camera mainCam = Camera.main;
-        if (mainCam == null)
-        {
-            Debug.LogError("Main camera not found! Make sure it's tagged 'MainCamera'.");
-            return;
-        }
+        // Create a new camera for this player
+        GameObject camObj = new GameObject("PlayerCamera");
+        Camera cam = camObj.AddComponent<Camera>();
+        camObj.tag = "MainCamera"; // Tag it, so Camera.main works
+        camObj.AddComponent<AudioListener>(); // Required for hearing audio
 
-        CameraFollow followScript = mainCam.GetComponent<CameraFollow>();
-        if (followScript == null)
-        {
-            Debug.LogError("CameraFollow script missing on Main Camera.");
-            return;
-        }
+        // Add CameraFollow script
+        CameraFollow followScript = camObj.AddComponent<CameraFollow>();
+        followScript.target = transform;
 
-        followScript.target = transform; // Make camera follow this player
-        mainCam.gameObject.SetActive(true);
+        // Optional: adjust camera offset if needed
+        followScript.offset = new Vector3(0, 5, -10);
     }
 }
